@@ -4,7 +4,8 @@
 
 1. Equations of all three versions of logic function f(c,b,a):
 
-   <img src="https://latex.codecogs.com/png.image?\dpi{110}&space;\bar{\bar{\bar{b}a}\bar{\bar{c}\bar{b}}}\bar{\bar{a}&plus;b}&plus;\bar{c&plus;b}" title="\bar{\bar{\bar{b}a}\bar{\bar{c}\bar{b}}}\bar{\bar{a}+b}+\bar{c+b}" />
+![logickefce](obrazky/logickefce.png)
+
 
 2. Listing of VHDL architecture from design file (`design.vhd`) for all three functions. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
