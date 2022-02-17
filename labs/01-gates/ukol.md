@@ -35,9 +35,17 @@ end architecture dataflow;
 
 1. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![leva-prava](obrazky/leva-prava.png)
+	De Morgan's laws:
+![org-nand-nor](obrazky/org-nand-nor.png)
+
+	Distributive Laws: 
+![leva-prava](obrazky/leva-prava.png)
 
 2. Link to your public EDA Playground example:
 
+De Morgan's laws:
+	https://www.edaplayground.com/x/D4kd
+
+Distributive Laws:
 	https://www.edaplayground.com/x/KemU
    
