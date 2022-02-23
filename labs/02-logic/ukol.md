@@ -6,7 +6,7 @@
 
    Greater than:
 
-   ![K-maps](obrazky/posjpg)
+   ![K-maps](obrazky/pos.jpg)
 
    Less than:
 
