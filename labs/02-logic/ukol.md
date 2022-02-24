@@ -49,4 +49,4 @@
 
 3. Link to your public EDA Playground example:
 
-   https://github.com/monis11/digital-electronics-1/blob/main/labs/02-logic/ukol.md
+   https://www.edaplayground.com/x/cp6V
