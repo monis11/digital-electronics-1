@@ -17,7 +17,7 @@
 
 1. Listing of VHDL stimulus process from testbench file (`testbench.vhd`) with at least one assert (use BCD codes of your student ID digits as input combinations). Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
-   Last two digits of my student ID: **229233??**
+   Last two digits of my student ID: **33**
 
 ```vhdl
     p_stimulus : process
@@ -45,6 +45,7 @@
 2. Text console screenshot during your simulation, including reports.
 
    ![screenshot](obrazky/snimek.png)
+   ![screenshot](obrazky/snimek1.png)
 
 
 3. Link to your public EDA Playground example:
