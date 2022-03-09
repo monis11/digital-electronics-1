@@ -1,4 +1,4 @@
-# Lab 4: YOUR_FIRSTNAME LASTNAME
+# Lab 4: Monika Vlkova
 
 ### Seven-segment display decoder
 
@@ -85,7 +85,7 @@
 
 2. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![graf](obrazky/graf.png)
+   ![graf](obrazky/grafs.png)
 
 ### LED(7:4) indicators
 
