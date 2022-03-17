@@ -1,4 +1,4 @@
-# Lab 5: Vlkova Monika
+# Lab 5: Vlková Monika
 
 ### Flip-flops
 
