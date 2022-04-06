@@ -51,6 +51,7 @@ begin
                 s_cnt_local <= (others => '0'); -- Clear all bits
 
             elsif (en_i = '1') then -- Test if counter is enabled
+<<<<<<< HEAD
 
                 -- TEST COUNTER DIRECTION HERE
                     if (cnt_up_i = '1') then
@@ -58,6 +59,18 @@ begin
                     elsif (cnt_up_i = '0') then    
                         s_cnt_local <= s_cnt_local - 1;
                     end if;    
+=======
+                  s_cnt_local <= (others => '0');
+                
+                if (cnt_up_i = '1') then
+                s_cnt_local <= s_cnt_local + 1;
+                
+             else             
+                    s_cnt_local <= s_cnt_local - 1;
+                
+                
+                 end if;
+>>>>>>> 193f93f1c2817364fc81703086293da1147ab8f3
             end if;
         end if;
     end process p_cnt_up_down;
@@ -65,4 +78,8 @@ begin
     -- Output must be retyped from "unsigned" to "std_logic_vector"
     cnt_o <= std_logic_vector(s_cnt_local);
 
+<<<<<<< HEAD
 end architecture behavioral;
+=======
+end architecture behavioral;
+>>>>>>> 193f93f1c2817364fc81703086293da1147ab8f3

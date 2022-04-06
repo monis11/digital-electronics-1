@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 193f93f1c2817364fc81703086293da1147ab8f3
 ------------------------------------------------------------
 --
 -- Generates clock enable signal.
@@ -66,6 +69,9 @@ begin
     end process p_clk_ena;
 
 end architecture Behavioral;
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 193f93f1c2817364fc81703086293da1147ab8f3

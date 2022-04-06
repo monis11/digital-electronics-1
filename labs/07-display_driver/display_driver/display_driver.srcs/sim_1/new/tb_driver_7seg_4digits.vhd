@@ -29,6 +29,7 @@ architecture testbench of tb_driver_7seg_4digits is
 
     -- Local signals
     signal s_clk_100MHz : std_logic;
+<<<<<<< HEAD
     signal s_reset      : std_logic;
     signal s_data0      : std_logic_vector(3 downto 0);
     signal s_data1      : std_logic_vector(3 downto 0);
@@ -59,6 +60,33 @@ begin
            seg_o   => s_seg_o,
            dig_o   => s_dig_o
         );
+=======
+    signal s_reset : std_logic;
+    signal s_data0 : std_logic_vector(3 downto 0);
+    signal s_data1 : std_logic_vector(3 downto 0);
+    signal s_data2 : std_logic_vector(3 downto 0);
+    signal s_data3 : std_logic_vector(3 downto 0);
+    signal s_dpin  : std_logic_vector(3 downto 0);
+    signal s_dpout : std_logic;
+    signal s_seg   : std_logic_vector(6 downto 0);
+    signal s_dig   : std_logic_vector(3 downto 0);
+    
+begin
+    uut_cnt: entity work.driver_7seg_4digits
+    	port map(
+        	clk		=> s_clk_100MHz,
+          	reset	=> s_reset,
+     		data0_i	=> s_data0,
+    		data1_i	=> s_data1,
+  			data2_i	=> s_data2,
+   			data3_i	=> s_data3,
+    		dp_i	=> s_dpin,
+    		dp_o	=> s_dpout,
+  			seg_o	=> s_seg,
+    		dig_o	=> s_dig
+        );
+
+>>>>>>> 193f93f1c2817364fc81703086293da1147ab8f3
     --------------------------------------------------------
     -- Clock generation process
     --------------------------------------------------------
@@ -76,6 +104,7 @@ begin
     --------------------------------------------------------
     -- Reset generation process
     --------------------------------------------------------
+<<<<<<< HEAD
     -- WRITE YOUR CODE HERE AND ACTIVATE RESET FOR A WHILE
     -- p_reset_gen : process
     -- begin
@@ -92,12 +121,22 @@ p_reset_gen : process
         s_reset <= '0';
 
         wait;
+=======
+    
+    -- WRITE YOUR CODE HERE AND ACTIVATE RESET FOR A WHILE
+    p_reset_gen : process
+    begin
+    	s_reset <= '0'; wait for 12 ns;
+        s_reset <= '1'; wait for 73 ns;
+        s_reset <= '0'; wait;
+>>>>>>> 193f93f1c2817364fc81703086293da1147ab8f3
     end process p_reset_gen;
 
     --------------------------------------------------------
     -- Data generation process
     --------------------------------------------------------
     -- WRITE YOUR CODE HERE AND TEST INPUT VALUE "3.142"
+<<<<<<< HEAD
      p_stimulus : process
     
     begin
@@ -114,3 +153,20 @@ p_reset_gen : process
     end process p_stimulus;
     
 end architecture testbench;
+=======
+    p_stimulus : process
+    begin
+    	report "Stimulus process started" severity note;
+        
+        s_data3 <= "0011";
+        s_data2 <= "0001";
+        s_data1 <= "0100";
+        s_data0 <= "0010";
+        s_dpin	<= "0111";
+        
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
+        
+end architecture testbench;
+>>>>>>> 193f93f1c2817364fc81703086293da1147ab8f3

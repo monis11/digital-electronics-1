@@ -69,6 +69,7 @@ architecture Behavioral of driver_7seg_4digits is
 
 begin
     --------------------------------------------------------
+<<<<<<< HEAD
      -- Instance (copy) of clock_enable entity generates 
     -- an enable pulse every 4 ms
     clk_en0 : entity work.clock_enable
@@ -83,12 +84,29 @@ begin
 
     --------------------------------------------------------
      -- Instance (copy) of cnt_up_down entity performs a 2-bit
+=======
+    -- Instance (copy) of clock_enable entity generates 
+    -- an enable pulse every 4 ms
+    clk_en0 : entity work.clock_enable
+        generic map(
+            g_MAX => 400000
+        )
+        port map(
+            clk   => clk,
+            reset => reset,
+            ce_o  => s_en
+        );
+
+    --------------------------------------------------------
+    -- Instance (copy) of cnt_up_down entity performs a 2-bit
+>>>>>>> 193f93f1c2817364fc81703086293da1147ab8f3
     -- down counter
     bin_cnt0 : entity work.cnt_up_down
         generic map(
             g_CNT_WIDTH => 2
         )
         port map(
+<<<<<<< HEAD
             clk     => clk,
             reset   => reset,
             en_i    => s_en,
@@ -98,6 +116,15 @@ begin
         );
 
 
+=======
+            en_i        => s_en,
+            cnt_up_i    => '0',
+            reset       => reset,
+            clk         => clk,
+            cnt_o       => s_cnt
+        );
+
+>>>>>>> 193f93f1c2817364fc81703086293da1147ab8f3
     --------------------------------------------------------
     -- Instance (copy) of hex_7seg entity performs a 7-segment
     -- display decoder
